@@ -85,7 +85,7 @@ const printQuote = () => {
 };
 
 // Add autorefresh functionality. Time in milliseconds
-setInterval(printQuote, 8000);
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
