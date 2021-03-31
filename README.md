@@ -5,10 +5,15 @@ project.
 
 ## What does it do?
 
-It displays famouse quotes and shows the source. some quotes also have citation and year. 
+It displays famous quotes and shows the source. some quotes also have citations and year.
 
-I also added a couple extra features to the app which were not required but optional challenges. 
+I also added a couple extra features to the app which were not required but optional challenges.
 
 <ul>
   <li>Auto refresh of the quote at a set interval</li>
+  <li>Random background color generator on each new quote</li>
 </ul>
+
+## Languages & Frameworks
+
+This random quote generator was build using HTML, CSS, and Javascript.
