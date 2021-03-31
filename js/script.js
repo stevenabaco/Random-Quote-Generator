@@ -9,12 +9,12 @@ let quotes = [
 	{
 		quote: "If you want to live a happy life, tie it to a goal, not to people or things",
 		source: "Albert Einstein",
-		image: "./img/Einstein.jpeg",
+		image: "./img/einstein.jpeg",
 	},
 	{
 		quote: "Stay away from negative people. They have a problem for every solution",
 		source: "Albert Einstein",
-		image: "./img/Einstein.jpeg",
+		image: "./img/einstein.jpeg",
 	},
 	{
 		quote: "Success is the Ability to go from one failure to another with no loss of enthusiasm",
@@ -27,7 +27,7 @@ let quotes = [
 	{
 		quote: "Strive not to be a success, but rather to be of value",
 		source: "Albert Einstein",
-		image: "./img/Einstein.jpeg",
+		image: "./img/einstein.jpeg",
 	},
 	{
 		quote: "It's a dog eat dog world, Sammy, and I'm wearing Milk-Bone underwear.",
