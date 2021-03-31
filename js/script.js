@@ -84,6 +84,8 @@ const printQuote = () => {
 	document.getElementById("quote-box").innerHTML = html;
 };
 
+// Add autorefresh functionality. Time in milliseconds
+setInterval(printQuote, 8000);
 
 /***
  * click event listener for the print quote button
