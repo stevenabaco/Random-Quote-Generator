@@ -61,6 +61,17 @@ const printQuote = () => {
 
 	html += "</p>"; // Close html string
 
+  // logic to randomize background color for each quote
+  let body = document.body;
+  let randomValue = () => Math.floor(Math.random() * 256);
+  
+  const randomRGB = value => {
+    const color = `rgb(${value()}, ${value()}, ${value()})`;
+    return color;
+  }
+
+  body.style = `background-color: ${randomRGB(randomValue)}`
+
 	//Display dynamic html in "quote-box" id in index.html
 	document.getElementById("quote-box").innerHTML = html;
 };
