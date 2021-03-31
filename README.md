@@ -1,7 +1,7 @@
 # random-quote-generator
 
 A random quote generator built with vanilla Javascript for my TeamTreehouse Techdegree Unit 1
-project.
+project with an emphases on Javascript.
 
 ## What does it do?
 
