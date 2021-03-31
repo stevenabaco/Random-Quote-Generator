@@ -9,10 +9,12 @@ let quotes = [
 	{
 		quote: "If you want to live a happy life, tie it to a goal, not to people or things",
 		source: "Albert Einstein",
+		image: "/img/Einstein.jpeg",
 	},
 	{
 		quote: "Stay away from negative people. They have a problem for every solution",
 		source: "Albert Einstein",
+		image: "/img/Einstein.jpeg",
 	},
 	{
 		quote: "Success is the Ability to go from one failure to another with no loss of enthusiasm",
@@ -25,6 +27,7 @@ let quotes = [
 	{
 		quote: "Strive not to be a success, but rather to be of value",
 		source: "Albert Einstein",
+		image: "/img/Einstein.jpeg",
 	},
 	{
 		quote: "It's a dog eat dog world, Sammy, and I'm wearing Milk-Bone underwear.",
@@ -54,27 +57,33 @@ const printQuote = () => {
 	if (quote.citation) {
 		html += `<span class="citation">${quote.citation}</span>`;
 	}
-	// Check to see if a quote has a year. Tru => Show it
+	// Check to see if a quote has a year. True => Show it.
 	if (quote.year) {
 		html += `<span class="year">${quote.year}</span>`;
 	}
-
+	//Check to see if a quote has an image. True => Show it.
+	if (quote.image) {
+		html += `
+      <img src="${quote.image}" alt="${quote.source}">
+    `;
+	}
 	html += "</p>"; // Close html string
 
-  // logic to randomize background color for each quote
-  let body = document.body;
-  let randomValue = () => Math.floor(Math.random() * 256);
-  
-  const randomRGB = value => {
-    const color = `rgb(${value()}, ${value()}, ${value()})`;
-    return color;
-  }
+	// logic to randomize background color for each quote
+	let body = document.body;
+	let randomValue = () => Math.floor(Math.random() * 256);
 
-  body.style = `background-color: ${randomRGB(randomValue)}`
+	const randomRGB = value => {
+		const color = `rgb(${value()}, ${value()}, ${value()})`;
+		return color;
+	};
+
+	body.style = `background-color: ${randomRGB(randomValue)}`;
 
 	//Display dynamic html in "quote-box" id in index.html
 	document.getElementById("quote-box").innerHTML = html;
 };
+
 
 /***
  * click event listener for the print quote button
